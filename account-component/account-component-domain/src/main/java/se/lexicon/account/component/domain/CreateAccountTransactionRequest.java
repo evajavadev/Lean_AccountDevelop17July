@@ -29,9 +29,8 @@ public class CreateAccountTransactionRequest extends ValueObject {
 
     @Override
     protected Object[] getIdFields() {
-        return new Object[]{ arrangementId,batchId, insertionTimestamp, address, phase, amount };
+        return new Object[]{ arrangementId, batchId, insertionTimestamp, address, phase, amount };
     }
-
 
     public String getArrangementId() {
         return arrangementId;

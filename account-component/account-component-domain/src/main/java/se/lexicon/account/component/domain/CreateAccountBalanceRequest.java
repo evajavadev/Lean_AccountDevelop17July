@@ -38,9 +38,13 @@ public class CreateAccountBalanceRequest extends ValueObject {
         return arrangementId;
     }
 
-    public String getBatchId() { return batchId; }
+    public String getBatchId() {
+        return batchId;
+    }
 
-    public Instant getInsertionTimestamp() { return insertionTimestamp; }
+    public Instant getInsertionTimestamp() {
+        return insertionTimestamp;
+    }
 
     public Set<Balance> getBalances() {
         return balances;
@@ -59,16 +63,9 @@ public class CreateAccountBalanceRequest extends ValueObject {
     //
     public static class Builder implements com.so4it.common.builder.Builder<CreateAccountBalanceRequest> {
 
-        //The arrangement id of this account balance
         private String arrangementId;
-
-        // Unique id for the posting
         private String batchId;
-
-        // Timestamp from core system when update was made
         private Instant insertionTimestamp;
-
-        //A set of all the registered balances for this arrangement
         private Set<Balance> balances;
 
         public Builder withArrangementId(String arrangementId) {

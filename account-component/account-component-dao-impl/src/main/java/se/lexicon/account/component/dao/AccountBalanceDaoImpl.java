@@ -9,7 +9,8 @@ import static org.openspaces.extensions.QueryExtension.*;
  * @author Magnus Poromaa {@literal <mailto:magnus.poromaa@so4it.com/>}
  */
 
-public class AccountBalanceDaoImpl extends AbstractSpaceDao<AccountBalanceEntity, String> implements AccountBalanceDao {
+public class AccountBalanceDaoImpl extends AbstractSpaceDao<AccountBalanceEntity, String>
+        implements AccountBalanceDao {
 
 
     public AccountBalanceDaoImpl(GigaSpace gigaSpace) {
@@ -17,7 +18,8 @@ public class AccountBalanceDaoImpl extends AbstractSpaceDao<AccountBalanceEntity
     }
 
     /**
-     * Fetches the latest (e.g. highest insertion timestamp) {@code AccountBalanceEntity} available in the space.
+     * Fetches the latest (e.g. highest insertion timestamp)
+     * {@code AccountBalanceEntity} available in the space.
      *
      *
      * @param arrangementId

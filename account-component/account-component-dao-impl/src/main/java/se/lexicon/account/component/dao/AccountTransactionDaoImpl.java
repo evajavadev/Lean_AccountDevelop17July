@@ -9,7 +9,8 @@ import static org.openspaces.extensions.QueryExtension.maxEntry;
  * @author Magnus Poromaa {@literal <mailto:magnus.poromaa@so4it.com/>}
  */
 
-public class AccountTransactionDaoImpl extends AbstractSpaceDao<AccountTransactionEntity, String> implements AccountTransactionDao {
+public class AccountTransactionDaoImpl extends AbstractSpaceDao<AccountTransactionEntity, String>
+        implements AccountTransactionDao {
 
 
     public AccountTransactionDaoImpl(GigaSpace gigaSpace) {
@@ -17,7 +18,8 @@ public class AccountTransactionDaoImpl extends AbstractSpaceDao<AccountTransacti
     }
 
     /**
-     * Fetches the latest (e.g. highest insertion timestamp) {@code AccountTransactionEntity} available in the space.
+     * Fetches the latest (e.g. highest insertion timestamp)
+     * {@code AccountTransactionEntity} available in the space.
      *
      *
      * @param arrangementId

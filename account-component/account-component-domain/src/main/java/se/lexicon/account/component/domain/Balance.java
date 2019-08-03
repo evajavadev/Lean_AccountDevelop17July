@@ -37,7 +37,7 @@ public class Balance extends ValueObject {
 
     @Override
     protected Object[] getIdFields() {
-        return new Object[]{address,phase,amount};
+        return new Object[]{ address,phase,amount };
     }
 
 

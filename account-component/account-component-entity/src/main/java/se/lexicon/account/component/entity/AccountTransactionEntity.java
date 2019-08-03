@@ -29,13 +29,15 @@ public class AccountTransactionEntity extends IdEntity<String> {
     }
 
     private AccountTransactionEntity(Builder builder) {
-        this.arrangementId = Required.notNull(builder.arrangementId, "arrangementId", builder.isTemplate());
-        this.batchId = Required.notNull(builder.batchId, "batchId", builder.isTemplate());
-        this.insertionTimestamp = Required.notNull(builder.insertionTimestamp, "insertionTimestamp", builder.isTemplate());
+        this.arrangementId = Required.notNull(builder.arrangementId, "arrangementId",
+                builder.isTemplate());
+        this.batchId = Required.notNull(builder.batchId, "batchId",
+                builder.isTemplate());
+        this.insertionTimestamp = Required.notNull(builder.insertionTimestamp, "insertionTimestamp",
+                builder.isTemplate());
         this.address = Required.notNull(builder.address, "address", builder.isTemplate());
         this.phase = Required.notNull(builder.phase, "phase", builder.isTemplate());
         this.amount = Required.notNull(builder.amount, "amount", builder.isTemplate());
-
     }
 
     @Override
@@ -65,21 +67,37 @@ public class AccountTransactionEntity extends IdEntity<String> {
         this.batchId = batchId;
     }
 
-    public Instant getInsertionTimestamp() { return insertionTimestamp; }
+    public Instant getInsertionTimestamp() {
+        return insertionTimestamp;
+    }
 
-    public void setInsertionTimestamp(Instant insertionTimestamp) { this.insertionTimestamp = insertionTimestamp; }
+    public void setInsertionTimestamp(Instant insertionTimestamp) {
+        this.insertionTimestamp = insertionTimestamp;
+    }
 
-    public String getAddress() { return address; }
+    public String getAddress() {
+        return address;
+    }
 
-    public void setAddress(String address) { this.address = address; }
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-    public Phase getPhase() { return phase; }
+    public Phase getPhase() {
+        return phase;
+    }
 
-    public void setPhase(Phase phase) { this.phase = phase; }
+    public void setPhase(Phase phase) {
+        this.phase = phase;
+    }
 
-    public Money getAmount() { return amount; }
+    public Money getAmount() {
+        return amount;
+    }
 
-    public void setAmount(Money amount) { this.amount = amount; }
+    public void setAmount(Money amount) {
+        this.amount = amount;
+    }
 
 
 

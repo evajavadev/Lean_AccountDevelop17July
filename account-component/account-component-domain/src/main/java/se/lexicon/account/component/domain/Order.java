@@ -31,7 +31,6 @@ public class Order extends ValueObject implements Serializable {
         this.ssn = Required.notNull(builder.ssn,"ssn");
     }
 
-
     public String getId() {
         return id;
     }
@@ -50,7 +49,7 @@ public class Order extends ValueObject implements Serializable {
 
     @Override
     protected Object[] getIdFields() {
-        return new Object[]{amount, orderBookId};
+        return new Object[]{ amount, orderBookId };
     }
 
 

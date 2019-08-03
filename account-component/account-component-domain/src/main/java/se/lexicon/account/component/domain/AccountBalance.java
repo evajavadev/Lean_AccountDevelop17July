@@ -46,9 +46,8 @@ public class AccountBalance extends ValueObject {
 
     @Override
     protected Object[] getIdFields() {
-        return new Object[]{id,arrangementId,batchId};
+        return new Object[]{ id,arrangementId,batchId };
     }
-
 
     public String getId() {
         return id;
@@ -62,7 +61,9 @@ public class AccountBalance extends ValueObject {
         return batchId;
     }
 
-    public Instant getInsertionTimestamp() { return insertionTimestamp; }
+    public Instant getInsertionTimestamp() {
+        return insertionTimestamp;
+    }
 
     public Set<Balance> getBalances() {
         return balances;
@@ -74,7 +75,8 @@ public class AccountBalance extends ValueObject {
         return new Builder();
     }
     //
-    public static class Builder implements com.so4it.common.builder.Builder<AccountBalance> {
+    public static class Builder implements
+            com.so4it.common.builder.Builder<AccountBalance> {
 
         private String id;
         private String arrangementId;

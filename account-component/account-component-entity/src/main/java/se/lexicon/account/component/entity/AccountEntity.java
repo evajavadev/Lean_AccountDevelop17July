@@ -61,8 +61,6 @@ public class AccountEntity extends IdEntity<String> {
     public static class Builder extends AbstractEntityBuilder<AccountEntity> {
 
         private String id;
-
-        // Unique id for the posting
         private BigDecimal amount;
 
         public Builder(boolean template) {

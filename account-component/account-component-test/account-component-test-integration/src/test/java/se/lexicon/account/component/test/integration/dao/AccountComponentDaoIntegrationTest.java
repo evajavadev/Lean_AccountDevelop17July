@@ -1,4 +1,5 @@
 package se.lexicon.account.component.test.integration.dao;
+import se.lexicon.account.component.test.common.entity.AccountEntityTestBuilder;
 import se.lexicon.account.component.test.integration.service.AccountComponentServiceIntegrationTestSuite;
 import com.so4it.test.category.IntegrationTest;
 import com.so4it.test.gs.rule.ClearGigaSpaceTestRule;
@@ -10,7 +11,6 @@ import org.junit.experimental.categories.Category;
 import org.junit.rules.RuleChain;
 import org.openspaces.core.GigaSpace;
 import se.lexicon.account.component.entity.AccountEntity;
-import se.lexicon.account.component.test.common.entity.AccountEntityTestBuilder;
 import se.lexicon.account.componment.dao.AccountDao;
 /**
  * @author Magnus Poromaa {@literal <mailto:magnus.poromaa@so4it.com/>}

@@ -31,9 +31,8 @@ public class AccountTransaction extends ValueObject {
 
     @Override
     protected Object[] getIdFields() {
-        return new Object[]{id, arrangementId, batchId, insertionTimestamp, address, phase, amount};
+        return new Object[]{ id, arrangementId, batchId, insertionTimestamp, address, phase, amount };
     }
-
 
     public String getId() {
         return id;
